@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+	<title>Frontend Mentor | Crowdfunding product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+<body class="">
+
+<!-- Navbar header -->
+	<div class="shadow-overlay"></div>
+	<div class="navbar">
+		<div class="logo-and-mobilemenu">
+			<div class="logobox">crowdfund</div>
+			<button class="menu-button"></button>
+		</div>
+		<nav>
+			<ul class="navigationlinks">
+				<li><a href="">About</a></li>
+				<li><a href="">Discover</a></li>
+				<li><a href="">Get Started</a></li>
+			</ul>
+		</nav>
+	</div>
+<!-- END Navbar header -->
+
+
+
+<!-- Project Container -->
+<div class="project-container">
+	<!-- Item Title Box -->
+	<div class="content-box">
+		<div class="project-thumbnail"><img src="images/logo-mastercraft.svg"></div>
+		<div class="title-content">
+			<div class="title-heading"><h1>Mastercraft Bamboo Monitor Riser</h1></div>
+			<div class="title-subhead">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</div>		
+		</div>
+		<div class="title-buttons">
+			<div class="back-project-button-div"><button class="back-project">Back this project</button></div>
+			<div class="bookmark-button-div">
+				<div class="bookmark-button-image-div"><img src="images/icon-bookmark-green.svg"></div>
+				<div class="bookmark-button-text-div">Bookmark</div>
+			</div>
+		</div>
+	</div>
+	<!-- END Item Title Box -->
+
+	<!-- Project Stats Box -->
+	<div class="content-box">
+		<div class="numbers-boxes">
+			<div class="money-stats">
+				<div class="amount-raised">$<span class="raised-box"></span></div>
+				<div class="stats-subhead">of $<span class="target-box"></span> backed</div>
+			</div>
+			<div class="backer-stats">
+				<div class="number-of-backers"><span class="backer-box"></span></div>
+				<div class="stats-subhead">total backers</div>				
+			</div>
+			<div class="countdown-stats">
+				<div class="days-left">56</div>
+				<div class="stats-subhead">days left</div>
+			</div>
+		</div>
+		<div class="money-meter">
+
+			<div class="slider-container">
+            	<input type="range" min="0" max="100" class="money-progress-bar">
+          	</div>
+
+          	<div class="progress-slider-container">
+            	<input type="range" min="0" max="100" class="progress-money-progress-bar">
+          </div>
+
+		</div>
+		
+	</div>
+	<!-- END Project Stats Box -->
+
+	<!-- About Project Box -->
+	<div class="content-box">
+		<div class="about-description-text">
+			<div class="about-heading"><h2>About this project</h2></div>
+			<div>
+				<p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the task at hand.</p>
+				<p>Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+			</div>
+		</div>
+
+		<div class="pledge-option-box bamboo-box">
+			<div class="pledge-header">
+				<div class="pledge-name">Bamboo Stand</div>
+				<div class="pledge-amount">Pledge $25 or more</div>
+			</div>
+			<div class="pledge-description">
+				<p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
+			</div>
+			<div class="pledge-footer">
+				<div class="remaining-pledges-box"><span class="remaining-pledges rempledge1">79</span> left</div>
+				<div class="pledge-button-box"><button class="pledge-button">Select Reward</button></div>
+			</div>
+			
+		</div>
+
+		<div class="pledge-option-box black-box">
+			<div class="pledge-header">
+				<div class="pledge-name">Black Edition Stand</div>
+				<div class="pledge-amount">Pledge $75 or more</div>
+			</div>
+			<div class="pledge-description">
+				<p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+			</div>
+			<div class="pledge-footer">
+				<div class="remaining-pledges-box"><span class="remaining-pledges rempledge2">64</span> left</div>
+				<div class="pledge-button-box"><button class="pledge-button">Select Reward</button></div>
+			</div>
+			
+		</div>
+
+		<div class="pledge-option-box mahogany-box">
+			<div class="pledge-header">
+				<div class="pledge-name">Mahogany Special Edition</div>
+				<div class="pledge-amount">Pledge $200 or more</div>
+			</div>
+			<div class="pledge-description">
+				<p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+			</div>
+			<div class="pledge-footer">
+				<div class="remaining-pledges-box"><span class="remaining-pledges rempledge3">0</span> left</div>
+				<div class="pledge-button-box"><button class="pledge-button" disabled="disabled">Select Reward</button></div>
+			</div>
+			
+		</div>
+	</div>
+	<!-- END About Project Box -->
+
+</div>
+<!-- END Project Container -->
+
+
+<!-- Modal Select Pledge -->
+
+<div class="modal-background close">
+
+<div class="selection-modal-container">
+	<div class="selection-modal-header">
+		<div class="close-btn" onclick="closeModal()">&times</div>
+		<div class="selection-modal-header-heading">Back this project</div>
+		<div class="selection-modal-header-subheading"><p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p></div>
+	</div>
+	
+		<div class="pledge-selection-box">
+			<div class="pledge-selection-top-half">
+				<div class="radio-icon">
+					<input type="radio" id="no-reward" name="pledge-choice" value="pledge0" class="radiothing">
+				</div>
+				<div class="pledge-selection-info">
+					<div class="pledge-selection-top-half-headingfullrowwrap">	
+						<div class="pledge-selection-heading">Pledge with no reward</div>
+					</div>
+				<div class="pledge-selection-description"><p>Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.</p></div>
+				</div>
+			</div>
+			<div class="pledge-selection-footer">
+				<div class="pledge-selection-footer-text"><p>Enter your pledge</p></div>
+				<div class="submit-cluster">	
+					<div class="amount-input-wrap">
+						<div class="amount-input-dollar-sign">$</div>
+						<input type="number" name="pledge-amount" placeholder="1" min="001" class="pledge-amount-style" maxlength="3" oninput="if(this.value < this.min) {this.parentNode.nextElementSibling.setAttribute('disabled', 'disabled'); this.parentNode.nextElementSibling.innerHTML = 'Invalid amount';} else if(parseInt(this.value) > parseInt(this.min)-1){this.parentNode.nextElementSibling.removeAttribute('disabled'); this.parentNode.nextElementSibling.innerHTML = 'Continue';} if(this.value.length > this.maxLength){this.value = this.value.slice(0, this.maxLength);}">
+					</div>
+					<button class="pledge-submit-button" onclick="submitForm()">Continue</button>
+				</div>
+			</div>		
+		</div>
+		
+		<div class="pledge-selection-box">
+			<div class="pledge-selection-top-half">
+				<div class="radio-icon">
+					<input type="radio" id="bamboo-stand-reward" name="pledge-choice" value="pledge1" class="radiothing">
+				</div>
+				<div class="pledge-selection-info">
+					<div class="pledge-selection-top-half-headingfullrowwrap">
+						<div class="pledge-selection-top-half-headingwrap">
+							<div class="pledge-selection-heading">Bamboo Stand</div>
+							<div class="pledge-selection-amount-detail">Pledge $25 or more</div>
+						</div>
+						<div class="pledge-selection-remaining"><span class="figure-bold rempledge01">55</span> left</div>
+					</div>
+					<div class="pledge-selection-description"><p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p></div>
+				</div>
+			</div>
+			<div class="pledge-selection-footer">
+				<div class="pledge-selection-footer-text"><p>Enter your pledge</p></div>
+				<div class="submit-cluster">
+					<div class="amount-input-wrap">
+						<div class="amount-input-dollar-sign">$</div>
+						<input type="number" name="pledge-amount" placeholder="25" min="025" class="pledge-amount-style" maxlength="3" oninput="if(this.value < this.min) {this.parentNode.nextElementSibling.setAttribute('disabled', 'disabled'); this.parentNode.nextElementSibling.innerHTML = 'Invalid amount';} else if(parseInt(this.value) > parseInt(this.min)-1){this.parentNode.nextElementSibling.removeAttribute('disabled'); this.parentNode.nextElementSibling.innerHTML = 'Continue';} if(this.value.length > this.maxLength){this.value = this.value.slice(0, this.maxLength);}">
+					</div>
+					<button class="pledge-submit-button" onclick="submitForm()">Continue</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="pledge-selection-box">
+			<div class="pledge-selection-top-half">
+				<div class="radio-icon">
+					<input type="radio" id="black-edition-reward" name="pledge-choice" value="pledge2" class="radiothing">
+				</div>
+				<div class="pledge-selection-info">
+					<div class="pledge-selection-top-half-headingfullrowwrap">
+						<div class="pledge-selection-top-half-headingwrap">
+							<div class="pledge-selection-heading">Black Edition Stand</div>
+							<div class="pledge-selection-amount-detail">Pledge $75 or more</div>
+						</div>	
+						<div class="pledge-selection-remaining"><span class="figure-bold rempledge02">55</span> left</div>
+					</div>
+					<div class="pledge-selection-description"><p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p></div>
+				</div>
+			</div>
+			<div class="pledge-selection-footer">
+				<div class="pledge-selection-footer-text"><p>Enter your pledge</p></div>
+				<div class="submit-cluster">
+					<div class="amount-input-wrap">
+						<div class="amount-input-dollar-sign">$</div>
+						<input type="number" name="pledge-amount" placeholder="75" min="075" class="pledge-amount-style" maxlength="3" oninput="if(this.value < this.min) {this.parentNode.nextElementSibling.setAttribute('disabled', 'disabled'); this.parentNode.nextElementSibling.innerHTML = 'Invalid amount';} else if(parseInt(this.value) > parseInt(this.min)-1){this.parentNode.nextElementSibling.removeAttribute('disabled'); this.parentNode.nextElementSibling.innerHTML = 'Continue';} if(this.value.length > this.maxLength){this.value = this.value.slice(0, this.maxLength);}">
+					</div>
+					<button class="pledge-submit-button" onclick="submitForm()">Continue</button>
+				</div>
+			</div>
+		</div>
+		
+			<div class="pledge-selection-box">
+			<div class="pledge-selection-top-half">
+				<div class="radio-icon">
+					<input type="radio" id="black-edition-reward" name="pledge-choice" value="pledge2" class="radiothing">
+				</div>
+				<div class="pledge-selection-info">
+					<div class="pledge-selection-top-half-headingfullrowwrap">
+						<div class="pledge-selection-top-half-headingwrap">
+							<div class="pledge-selection-heading">Mahogany Special Edition</div>
+							<div class="pledge-selection-amount-detail">Pledge $200 or more</div>
+						</div>
+						<div class="pledge-selection-remaining"><span class="figure-bold rempledge03">55</span> left</div>
+					</div>
+					<div class="pledge-selection-description"><p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p></div>
+				</div>
+			</div>
+			<div class="pledge-selection-footer">
+				<div class="pledge-selection-footer-text"><p>Enter your pledge</p></div>
+				<div class="submit-cluster">
+					<div class="amount-input-wrap">
+						<div class="amount-input-dollar-sign">$</div>
+						<input type="number" name="pledge-amount" placeholder="200" min="200" class="pledge-amount-style" maxlength="3" oninput="if(this.value < this.min) {this.parentNode.nextElementSibling.setAttribute('disabled', 'disabled'); this.parentNode.nextElementSibling.innerHTML = 'Invalid amount';} else if(parseInt(this.value) > parseInt(this.min)-1){this.parentNode.nextElementSibling.removeAttribute('disabled'); this.parentNode.nextElementSibling.innerHTML = 'Continue';} if(this.value.length > this.maxLength){this.value = this.value.slice(0, this.maxLength);}">
+					</div>
+					<button class="pledge-submit-button" onclick="submitForm()">Continue</button>
+				</div>
+			</div>
+		</div>
+	
+
+
+</div>
+
+<!-- END Modal Select Pledge -->
+
+<!-- Success Modal -->
+
+<div class="success-modal-container">
+	<div class="succes-icon"><img src="images/icon-check.svg"></div>
+	<div class="success-heading">Thanks for your support!</div>
+	<div class="success-body"><p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.</p></div>
+	<div class="successbuttondiv"><button class="success-done-button" onclick="closeModal()">Got it!</button></div>
+
+</div>
+
+</div>
+<!-- ENDSuccess Modal -->
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
